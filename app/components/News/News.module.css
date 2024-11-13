@@ -1,0 +1,147 @@
+.news {
+    color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.news-title {
+    font-size: 30px;
+    font-family: stalinist;
+    margin-bottom: 90px;
+    padding-top: 100px;
+}
+
+.news-container{
+    display: flex;
+    gap: 150px;
+}
+
+.new-containier{
+    cursor: pointer;
+    width:  400px;
+
+    padding-bottom: 50px;
+}
+
+.new-containier{
+    padding-top: 30px;
+}
+
+.new-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(15px, 2vw, 20px);
+    font-family: interRegular;
+}
+
+.new-subtitle{
+    font-size: 16px;
+    font-family: strong;
+}
+
+.main-img{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.main-img:hover{
+    -webkit-box-shadow: 0px 0px 21px -1px rgba(255, 255, 255, 0.88);
+}
+
+
+.main-img:active{
+    -webkit-box-shadow: 0px 0px 21px -1px rgba(255, 255, 255, 0.88);
+}
+
+.new-title{
+    margin-bottom: 6px;
+}
+
+.swiper-slide{
+    padding-top: 30px;
+}
+
+.new-info{
+    padding-bottom: 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+.new-info-text-part{
+    width: 348px;
+}
+
+.my-swiper{
+    padding: 10px;
+}
+
+.arrow-img{
+    width: 30px;
+    height: 30px;
+}
+
+@media(max-width: 1560px) {
+
+    .news{
+      width: 100%;
+    }
+  }
+
+
+@media(max-width: 1350px) {
+    .news-title {
+        font-size: 25px;
+    }
+    .main-img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .new-info div p{
+        font-size: 15px;
+    }
+    
+    .news-container{
+        flex-wrap: wrap;
+        justify-content: center;
+
+      
+    }
+
+    .new-containier{
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+    }
+    .news{
+      width: 100%;
+    }
+    .news-title{
+        text-align: center;
+    }
+  }
+
+
+@media (max-width:768px) {
+    .news-title {
+        margin-bottom: 36px;
+        padding-top: 20px;
+    }
+
+    .main-img{
+        width: 151px;
+        height: 141px;
+    }
+    .new-info-text-part{
+        height: initial;
+        width: initial;
+    }
+    .new-containier{
+        align-items: center;
+    }
+}

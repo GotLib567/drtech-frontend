@@ -1,0 +1,100 @@
+.hero{
+    position: relative;
+    color: #fff;
+    margin-bottom: 55px;
+    padding: 0 5px;
+}
+
+.slider{
+    display: flex;
+    height: 450px;
+    
+}
+.slider-container{
+    align-items: center;
+    height: 100%;
+    display: flex;
+    width: 1515px;
+    margin: auto;
+    gap: 42px;
+    justify-content: center;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text{
+    height: 210px;
+}
+
+.title{
+    font-size: clamp(15px, 2vw, 30px);
+    font-family: stalinist;
+
+}
+
+.text{
+    font-size: clamp(10px, 2vw,16px);
+    font-family: strong;
+    height: 210px;
+    width: 455px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slider-container{
+    display: flex;
+}
+
+.image{
+    border-radius: 100%;
+}
+
+@media (max-width: 1350px) {
+
+    .slider-container{
+        align-items: center;
+       width: 100%;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .slider{
+        height: 340px;
+    }
+    .text-content{
+        width: 180px;
+        gap: 34px;
+    }
+
+    .image{
+        width: clamp(180px, 5vw, 575px);
+        height: clamp(180px, 5vw, 575px);
+    }
+    .text{
+        height: 174px;
+        width: 220px;
+    }
+    .text span{
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 525px) {
+
+    .text{
+        height: 174px;
+        width: 170px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .slider-container{
+        gap: 5px;
+    }
+   
+}

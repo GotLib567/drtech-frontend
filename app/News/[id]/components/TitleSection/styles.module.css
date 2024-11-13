@@ -1,0 +1,26 @@
+.title {
+  font-size: clamp(15px, 2vw, 30px);
+  color: white;
+  font-family: strong;
+  padding-bottom: 40px;
+  text-align: left;
+  padding: 0px 20px;
+  /* margin-bottom: clamp(29px, 1vw, 45px); */
+}
+
+.under-title {
+  padding: 0px 20px;
+  text-align: left;
+  font-size: clamp(15px, 2vw, 20px);
+  color: white;
+  font-family: strong;
+  margin-bottom: clamp(29px, 1vw, 45px);
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .title,
+  .under-title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,33 @@
+.page-body {
+  /* background-color: #1f1f1f; */
+  background: url('../../assets/images/main-back.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+ 
+}
+
+.wrapper{
+  position: relative;
+  overflow: hidden;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 462px);
+}
+
+.status-section {
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width:1024px) {
+  .wrapper{
+    width: 100%;
+  }
+}

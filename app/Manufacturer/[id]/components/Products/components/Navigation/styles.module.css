@@ -1,0 +1,26 @@
+.nav-container {
+  display: flex;
+  max-width: 358px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 345px;
+  margin-top: 129px;
+}
+.numbers-container {
+  width: 100%;
+  display: flex;
+  gap: 51px;
+  justify-content: center;
+  align-items: center;
+}
+.navArrow-right {
+  transform: rotate(180deg);
+}
+
+.active {
+  font-size: clamp(25px, 5vw, 50px);
+}
+.non-active {
+  font-size: clamp(25px, 5vw, 50px);
+}

@@ -1,0 +1,49 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(21.34px, 5vw, 132px);
+  padding: 0px 20px;
+  padding-bottom: clamp(39px, 15vw, 232px);
+  position: relative;
+}
+
+.hero-description h1 {
+  color: white;
+  font-family: "interRegular";
+  font-size: clamp(15px, 2vw, 30px);
+  z-index: 100;
+}
+.hero-description h3,
+.description {
+  color: white;
+  font-family: Strong;
+  font-size: clamp(10px, 2vw,16px);
+  z-index: 100;
+}
+
+.hero-img {
+  width: clamp(170px, 30vw, 236px);
+  height: clamp(149px, 30vw, 224px);
+  z-index: 100;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: clamp(268px, 60vw, 464px);
+    text-align: center;
+  }
+}
