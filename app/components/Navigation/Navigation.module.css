@@ -1,0 +1,34 @@
+.navigation {
+
+    color: #ffff;
+    font-family: "strong";
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 4vw, 226px);
+    padding-top: 45px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.li {
+    font-size: clamp(15px, 4vw, 20px);
+}
+
+.mobile-space {
+    display: none;
+}
+
+@media (max-width:1024px) {
+    .navigation {
+        display: none;
+    }
+
+    .mobile-space {
+        display: block;
+        width: 100%;
+        height: 20px;
+    }
+}

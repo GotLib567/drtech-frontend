@@ -1,0 +1,130 @@
+.h1 {
+  font-size: clamp(15px, 2vw, 30px);
+  color: white;
+  font-family: strong;
+  margin-bottom: 65px;
+  margin-top: clamp(16px, 5vw, 127px);
+}
+.container {
+  background: url("../assets/images/main-back.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  min-height: calc(100vh - 500px);
+
+}
+
+.wrapper {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.th-cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.th-cart p {
+  text-align: center;
+  font-size: clamp(10px, 2vw, 16px);
+  color: white;
+  font-family: strong;
+  margin-bottom: clamp(14px, 5vw, 65px);
+}
+
+.cart-element-container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 5vw, 65px);
+}
+.hz-line {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #757272;
+  margin-bottom: clamp(28px, 5vw, 122px);
+  margin-top: clamp(14px, 5vw, 122px);
+}
+.final-price {
+  font-size: clamp(15px, 3vw, 30px);
+  color: white;
+  font-family: strong;
+  margin-bottom: clamp(36px, 5vw, 122px);
+}
+.form {
+  width: 518px;
+  margin: 0 auto;
+  margin-bottom: clamp(70px, 5vw, 141px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 2vw, 40px);
+  padding: 22px;
+  border: 1px solid white;
+}
+.form-button {
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: clamp(10px, 3vw, 16px);
+  color: white;
+  font-family: strong;
+  margin: 0 auto;
+  margin-top: clamp(28px, 8vw, 50px);
+}
+.form-input {
+  all: unset;
+  width: 100%;
+  font-size: clamp(10px, 3vw, 16px);
+  color: white;
+  font-family: strong;
+  border-bottom: 1px solid white !important;
+}
+.form-input::placeholder {
+  color: #d9d9d9;
+  font-family: strong;
+}
+.modal-window {
+  position: relative;
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 67px 55px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(84, 84, 86, 0.85);
+  max-width: 645px;
+  border-radius: 14px;
+}
+.modal-window button {
+  position: absolute;
+  right: 35px;
+  top: 32px;
+}
+.modal-window p {
+  color: white;
+  padding: 41px 2px;
+  border: 1px solid white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+.container{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  .cart-element-container {
+    padding: 0 24px;
+  }
+  .h1 {
+    text-align: center;
+    margin-bottom: 29px;
+  }
+  .form-button {
+    padding: 4px 19px;
+  }
+  .form {
+    width: 200px;
+    padding: 24px;
+  }
+}

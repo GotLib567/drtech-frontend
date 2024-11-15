@@ -1,0 +1,9 @@
+.description {
+  color: white;
+  font-family: "strong";
+  font-size: clamp(10px, 2vw,16px);
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: clamp(53px, 5vw, 352px);
+  padding: 0px 20px;
+}

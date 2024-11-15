@@ -1,0 +1,13 @@
+.h2 {
+  color: white;
+  font-family: "stalinist";
+  font-size: clamp(15px, 5vw, 67px);
+  font-weight: 400;
+  margin-bottom: clamp(53px, 5vw, 136px);
+}
+
+.NewsBlock-container {
+  display: flex;
+
+  gap: 162px;
+}

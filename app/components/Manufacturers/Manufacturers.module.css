@@ -1,0 +1,92 @@
+.title {
+    font-family: stalinist;
+    font-size: clamp(15px, 2vw, 30px);
+    padding-top: 145px;
+    padding-bottom: 130px;
+}
+
+.manufacturers {
+    color: #fff;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.manufacturers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 68px;
+    justify-content: center;
+}
+
+.manufacturer-title {
+    font-family: strong;
+    font-size: 16px;
+    text-align: center;
+}
+
+.img {
+    margin-bottom: 35px;
+}
+
+.button {
+    all: unset;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 1024px) {
+
+
+    .manufacturers {
+        max-width: 100%;
+    }
+
+    .title {
+        text-align: center;
+
+    }
+}
+
+@media(max-width: 920px) {
+    .manufacturers {
+        max-width: 448px;
+    }
+
+    .title {
+        padding-bottom: 45px;
+        font-size: 15px;
+    }
+
+    .manufacturers-container {
+        gap: 40px
+    }
+
+    .img {
+        margin-bottom: 15px;
+    }
+
+    .manufacturer-title {
+        font-family: strong;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .img {
+        width: 117px;
+        height: 103px;
+    }
+}
+
+@media(max-width: 920px) {
+    .manufacturers {
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 768px) {
+    .title {
+        padding-top: 40px;
+    }
+}

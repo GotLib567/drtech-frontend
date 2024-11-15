@@ -1,0 +1,116 @@
+.news-slider{
+
+    position: relative;
+}
+
+
+
+.new-container{
+    background: rgba(46, 45, 45, .5);
+    height: 360px;
+    max-width: 460px ;
+    margin-left: 300px;
+    padding: 24px 20px 40px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+}
+
+.slider{
+    display: flex;
+    height: 487px;
+}
+
+.slider-element{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+}
+
+.title{
+    font-family: stalinist;
+    font-size: 30px;
+    margin-bottom: 21px;
+
+}
+
+.subtitle{
+    font-family: strong;
+    font-size: 16px;
+    height: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.button:hover{
+    background: #1F1F1F;
+    transition: 0.2s;
+}
+
+.button:active{
+    background: #1F1F1F;
+}
+
+.button{
+    font-family: strong;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 262px;
+    border: 1px solid white;
+    padding: 14px;
+}
+
+@media (max-width: 1350px) {
+    .new-container{
+        max-width: 400px ;
+        margin: auto;
+        display: block;
+        height: initial;
+        padding: 30px 68px 35px 68px;
+    }
+
+    .slider-element{
+        padding: 0 30px;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .slider{
+        height: 600px;
+    }
+
+    .button{
+        width: initial;
+        font-size: 10px;
+        padding: 7px;
+        
+    }
+
+    .arrow{
+        width: 18px;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: clamp(15px, 2vw, 30px);
+    }
+
+    .subtitle{
+        line-height: 20px;
+        font-size: clamp(10px, 2vw, 16px)
+
+    }
+
+    .subtitle{
+        margin-bottom: 50px;
+    }
+}
