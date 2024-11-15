@@ -1,0 +1,49 @@
+.productContainer,
+.product-box {
+    margin: 0 auto;
+}
+
+.productContainer {
+    padding-top: 30px;
+}
+
+.slider{
+    margin-bottom: 50px;
+}
+
+.swiperSlide {
+    padding-bottom: 35px;
+}
+
+.title {
+    font-size: (15px, 2vw, 30px);
+    font-family: stalinist;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    color: #fff;
+}
+
+@media(max-width: 1350px) {
+    .news-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .slider{
+        margin-bottom: 30px;
+    }
+    .title {
+
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+
+    .news-title {
+        margin-bottom: 0;
+        padding-top: 60px;
+    }
+}
