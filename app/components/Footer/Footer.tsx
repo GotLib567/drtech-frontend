@@ -14,7 +14,7 @@ export default function Footer() {
   async function footerDataFetch() {
     try {
       const response = await fetch(
-        `https://nozhtoporshop.na4u.ru/wp-json/wp/v2/site-options`
+        `https://nozhtopor.na4u.ru/wp-json/wp/v2/site-options`
       );
       const data = await response.json();
       setFooterData(data);

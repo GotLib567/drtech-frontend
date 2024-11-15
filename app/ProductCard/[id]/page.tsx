@@ -76,7 +76,7 @@ export default function Page() {
   async function getPostData() {
     try {
       const response = await fetch(
-        `https://nozhtoporshop.na4u.ru/wp-json/wc/v3/products/${id}?consumer_key=${consumer_key}&consumer_secret=${consumer_secret}`
+        `https://nozhtopor.na4u.ru/wp-json/wc/v3/products/${id}?consumer_key=${consumer_key}&consumer_secret=${consumer_secret}`
       );
       const data = await response.json();
       setProductData(data);
@@ -89,7 +89,7 @@ export default function Page() {
   async function getManfacturerData(manufacturerId: number) {
     try {
       const response = await fetch(
-        `https://nozhtoporshop.na4u.ru/wp-json/wp/v2/manufacturers?acf_format=standard&_fields=id,name,acf&include=${manufacturerId}`
+        `https://nozhtopor.na4u.ru/wp-json/wp/v2/manufacturers?acf_format=standard&_fields=id,name,acf&include=${manufacturerId}`
       );
       const data = await response.json();
       console.log(data);

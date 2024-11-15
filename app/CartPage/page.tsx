@@ -68,7 +68,7 @@ export default function Page() {
     event.preventDefault();
     try {
       const response = await fetch(
-        "https://nozhtoporshop.na4u.ru/wp-json/wc/v3/orders?consumer_key=ck_13009f71f161c12f3757c121fe49020ce886db4e&consumer_secret=cs_e44d7f210c62424bd7989b6efda5b65bb4ce9f27",
+        "https://nozhtopor.na4u.ru/wp-json/wc/v3/orders?consumer_key=ck_13009f71f161c12f3757c121fe49020ce886db4e&consumer_secret=cs_e44d7f210c62424bd7989b6efda5b65bb4ce9f27",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

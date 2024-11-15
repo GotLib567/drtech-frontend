@@ -27,7 +27,7 @@ export function News() {
   async function getNewsData() {
     try {
       const response = await fetch(
-        "https://nozhtoporshop.na4u.ru/wp-json/wp/v2/posts?acf_format=standard&_fields=id,title,acf&show_on_main_page=true&post_location=down"
+        "https://nozhtopor.na4u.ru/wp-json/wp/v2/posts?acf_format=standard&_fields=id,title,acf&show_on_main_page=true&post_location=down"
       );
       const data = await response.json();
       setNews(data);

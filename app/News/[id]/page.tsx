@@ -43,7 +43,7 @@ export default function Page() {
   async function getPostData() {
     try {
       const response = await fetch(
-        `https://nozhtoporshop.na4u.ru/wp-json/wp/v2/posts?acf_format=standard&_fields=id,title,acf&include=${params.id}`
+        `https://nozhtopor.na4u.ru/wp-json/wp/v2/posts?acf_format=standard&_fields=id,title,acf&include=${params.id}`
       );
       const data = await response.json();
       setPostData(data);

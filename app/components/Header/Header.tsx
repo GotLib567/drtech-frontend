@@ -20,7 +20,7 @@ export function Header() {
   async function getheaderData() {
     try {
       const response = await fetch(
-        `https://nozhtoporshop.na4u.ru/wp-json/wp/v2/site-options`
+        `https://nozhtopor.na4u.ru/wp-json/wp/v2/site-options`
       );
       const data = await response.json();
       setHeaderData(data);

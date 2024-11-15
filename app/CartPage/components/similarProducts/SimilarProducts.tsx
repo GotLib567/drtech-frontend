@@ -18,7 +18,7 @@ export function SimilarProducts() {
   const getSimilarProduct = async (id: number) => {
     try {
       const response = await fetch(
-        `https://nozhtoporshop.na4u.ru/wp-json/wc/v3/products/${id}?consumer_key=${consumer_key}&consumer_secret=${consumer_secret}`
+        `https://nozhtopor.na4u.ru/wp-json/wc/v3/products/${id}?consumer_key=${consumer_key}&consumer_secret=${consumer_secret}`
       );
 
       const data = await response.json();

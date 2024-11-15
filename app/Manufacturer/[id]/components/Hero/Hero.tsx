@@ -10,7 +10,7 @@ export function Hero() {
   async function getHeroData() {
     try {
       const response = await fetch(
-        `https://nozhtoporshop.na4u.ru/wp-json/wp/v2/manufacturers?acf_format=standard&_fields=id,name,acf&include=${params.id}`
+        `https://nozhtopor.na4u.ru/wp-json/wp/v2/manufacturers?acf_format=standard&_fields=id,name,acf&include=${params.id}`
       );
       const data = await response.json();
       setHeroData(data);

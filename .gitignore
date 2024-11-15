@@ -13,6 +13,9 @@
 /.next/
 /out/
 
+# Ignoring IDE settings
+.idea/
+
 # production
 /build
 
