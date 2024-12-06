@@ -153,8 +153,8 @@ export default function Page() {
             </div>
           )}
           <p className={styles["description"]}>{decodedDesc}</p>
-          <h2 className={styles["h2"]}>Отзывы клиентов</h2>
-          <CommentBlock setShowModalWindow={setShowModalWindow} />
+          {/*<h2 className={styles["h2"]}>Отзывы клиентов</h2>*/}
+          {/*<CommentBlock setShowModalWindow={setShowModalWindow} />*/}
         </div>
       </div>
     </>
