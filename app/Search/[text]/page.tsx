@@ -113,6 +113,15 @@ export default function Page() {
     getManufacturersData();
   }, []);
 
+  useEffect(() => {
+    getProductsData();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [page]);
+
+
   return (
     <main className={styles["main"]}>
       <Navigation />
@@ -205,10 +214,7 @@ export default function Page() {
               {createArraybyLength(totalCount)?.map((number, index) => (
                 <button
                   key={index}
-                  onClick={() => {
-                    setPage(number);
-                    getFilteredProductsData();
-                  }}
+                  onClick={() => setPage(number)}
                   className={styles["pagination-number"]}
                   style={{ opacity: number === page ? "0.5" : "1" }}
                 >
