@@ -140,7 +140,7 @@ export default function Page() {
               <h2 className={styles["final-price"]}>
                 Итого: {getTotalPrice()} руб.
               </h2>
-              <SimilarProducts />
+              {/*<SimilarProducts />*/}
               <form
                 className={styles["form"]}
                 onSubmit={(e: any) => {
