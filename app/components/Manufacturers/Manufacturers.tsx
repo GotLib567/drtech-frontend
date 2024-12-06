@@ -37,7 +37,7 @@ export function Manufacturers() {
 
   return (
     <section className={styles["manufacturers"]}>
-      <p className={styles["title"]}>Производители</p>
+      <p className={styles["title"]}>Бренды</p>
       <div className={styles["manufacturers-container"]}>
         {" "}
         {manufacturers?.map((manufacturerData, index) => {

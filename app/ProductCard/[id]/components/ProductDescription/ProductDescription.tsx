@@ -69,7 +69,7 @@ export function ProductDescription({
       )}
       {manufacturerName && (
         <div className={styles["description-row"]}>
-          <p>Производитель</p> <p>{manufacturerName}</p>
+          <p>Бренд</p> <p>{manufacturerName}</p>
         </div>
       )}
     </div>

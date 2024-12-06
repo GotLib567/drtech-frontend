@@ -144,7 +144,7 @@ export default function Page() {
                 <div className={styles["filters"]}>
                   <div className={styles["filter-block"]}>
                     <div className={styles["filters-title-container"]}>
-                      <p className={styles["filters-title"]}>Производители</p>
+                      <p className={styles["filters-title"]}>Бренды</p>
                     </div>
                     <div className={styles["filters-options"]}>
                       {manufacturers.map((manufacturer, index) => {
