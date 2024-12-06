@@ -6,6 +6,7 @@ import emptyImg from "@/app/assets/images/manufacturer-hero-image.png";
 import styles from "../styles.module.css";
 import cart from "@/app/assets/icons/cart.svg";
 import heart from "@/app/assets/icons/heart.svg";
+import logo from "@/app/assets/images/drtech-logo-white.png";
 import sanitizeHtml from "sanitize-html";
 import Link from "next/link";
 
@@ -106,14 +107,25 @@ export default function ProductBox({
   return (
     <div className={styles["product-box"]}>
       <Link href={`/ProductCard/${product.id}`}>
-        <Image
-        unoptimized
-          src={product.images[0].src}
-          alt="emptyImg"
-          width={164}
-          height={155}
-          className={styles["product-image"]}
-        />
+        {product.images[0]?.src ? (
+          <Image
+            unoptimized
+            src={product.images[0].src}
+            alt="emptyImg"
+            width={164}
+            height={155}
+            className={styles["product-image"]}
+          />
+        ) : (
+          <Image
+            unoptimized
+            src={logo}
+            alt="emptyImg"
+            width={164}
+            height={155}
+            className={styles["product-image"]}
+          />
+        )}
         <p className={styles["p-under-image"]}>{decodedText}</p>
       </Link>
       <p className={styles["stock-status"]}>
